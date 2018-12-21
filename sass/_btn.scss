@@ -1,0 +1,23 @@
+button, button:active, button:hover, button:visited,button:focus{
+   outline: none!important;
+   cursor: pointer;
+ }
+.btn{
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
+}
+.btn-ghost{
+  font-size: 18px!important;
+  line-height: 18px!important;
+  color: $c-text-d;
+  border: 2px solid $c-brown;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 9px 30px;
+  &:hover{
+    background-color: $c-brown;
+    color: white;
+  }
+}
