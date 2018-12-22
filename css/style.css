@@ -472,7 +472,11 @@ body h6 {
   color: #9A6A2B;
 }
 
-/* line 69, ../sass/_project.scss */
+/* line 68, ../sass/_project.scss */
+.project-pg {
+  margin-top: 20px;
+}
+/* line 70, ../sass/_project.scss */
 .project-pg__card {
   background-color: #9A6A2B;
   display: flex;
@@ -486,20 +490,20 @@ body h6 {
   text-decoration: none;
   margin-bottom: 30px;
 }
-/* line 81, ../sass/_project.scss */
+/* line 82, ../sass/_project.scss */
 .project-pg__card:hover {
   text-decoration: none;
   color: white;
 }
-/* line 86, ../sass/_project.scss */
+/* line 87, ../sass/_project.scss */
 .project-pg__card:hover .project-pg__card__img img {
   opacity: 0;
 }
-/* line 89, ../sass/_project.scss */
+/* line 90, ../sass/_project.scss */
 .project-pg__card:hover .project-pg__card__img__shadows {
   box-shadow: inset 0px -100px 80px -30px transparent;
 }
-/* line 93, ../sass/_project.scss */
+/* line 94, ../sass/_project.scss */
 .project-pg__card:hover .project-pg__card__title {
   text-align: center;
   font-size: 24px;
@@ -508,15 +512,15 @@ body h6 {
   top: 0;
   transform: translateY(0);
 }
-/* line 101, ../sass/_project.scss */
+/* line 102, ../sass/_project.scss */
 .project-pg__card:hover .project-pg__card__sub-title {
   top: 0;
 }
-/* line 104, ../sass/_project.scss */
+/* line 105, ../sass/_project.scss */
 .project-pg__card:hover .project-pg__card__link {
   top: 0;
 }
-/* line 109, ../sass/_project.scss */
+/* line 110, ../sass/_project.scss */
 .project-pg__card__img {
   position: absolute;
   width: 100%;
@@ -525,7 +529,7 @@ body h6 {
   left: 0;
   transition: all linear 0.3s;
 }
-/* line 116, ../sass/_project.scss */
+/* line 117, ../sass/_project.scss */
 .project-pg__card__img__shadows {
   position: absolute;
   height: 100%;
@@ -535,7 +539,7 @@ body h6 {
   box-shadow: inset 0px -100px 80px -30px rgba(0, 0, 0, 0.7);
   transition: all linear 0.3s;
 }
-/* line 125, ../sass/_project.scss */
+/* line 126, ../sass/_project.scss */
 .project-pg__card__img img {
   position: relative;
   left: 50%;
@@ -543,7 +547,7 @@ body h6 {
   transform: translateX(-50%);
   transition: all linear 0.3s;
 }
-/* line 133, ../sass/_project.scss */
+/* line 134, ../sass/_project.scss */
 .project-pg__card__title {
   width: 100%;
   position: relative;
@@ -554,7 +558,7 @@ body h6 {
   transform: translateY(-100%);
   transition: all linear 0.3s;
 }
-/* line 143, ../sass/_project.scss */
+/* line 144, ../sass/_project.scss */
 .project-pg__card__sub-title {
   position: relative;
   color: white;
@@ -563,7 +567,7 @@ body h6 {
   top: 100%;
   transition: all linear 0.3s;
 }
-/* line 151, ../sass/_project.scss */
+/* line 152, ../sass/_project.scss */
 .project-pg__card__link {
   position: relative;
   font-size: 20px;
@@ -579,13 +583,13 @@ body h6 {
   border: none;
   outline: none;
 }
-/* line 165, ../sass/_project.scss */
+/* line 166, ../sass/_project.scss */
 .project-pg__card__link:focus {
   background-color: transparent;
   border: none;
   outline: none;
 }
-/* line 170, ../sass/_project.scss */
+/* line 171, ../sass/_project.scss */
 .project-pg__card__link:hover {
   text-decoration: none;
   color: white;
@@ -594,7 +598,7 @@ body h6 {
   border: none;
   outline: none;
 }
-/* line 178, ../sass/_project.scss */
+/* line 179, ../sass/_project.scss */
 .project-pg__card__link:after {
   content: "";
   position: absolute;
@@ -607,4 +611,112 @@ body h6 {
 }
 
 /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨Я╤А╨╛╨╡╨║╤В╤Л */
+/* line 1, ../sass/_footer.scss */
+.pages-footer {
+  background-color: #EEEEEE;
+  padding: 50px 0;
+}
+/* line 4, ../sass/_footer.scss */
+.pages-footer .row {
+  align-items: center;
+}
+/* line 7, ../sass/_footer.scss */
+.pages-footer .link-mail {
+  white-space: nowrap;
+}
+/* line 9, ../sass/_footer.scss */
+.pages-footer .link-mail:hover {
+  text-decoration: none;
+}
+/* line 11, ../sass/_footer.scss */
+.pages-footer .link-mail:hover span {
+  opacity: 0.8;
+}
+/* line 15, ../sass/_footer.scss */
+.pages-footer .link-mail img {
+  display: inline-block;
+  margin-right: 15px;
+  max-width: 15px;
+  max-height: 15px;
+}
+/* line 21, ../sass/_footer.scss */
+.pages-footer .link-mail span {
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 16px;
+}
+/* line 27, ../sass/_footer.scss */
+.pages-footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+/* line 34, ../sass/_footer.scss */
+.pages-footer ul li {
+  display: inline-block;
+}
+/* line 36, ../sass/_footer.scss */
+.pages-footer ul li a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3D4045;
+}
+/* line 44, ../sass/_footer.scss */
+.pages-footer__logo {
+  width: 80px;
+}
+/* line 47, ../sass/_footer.scss */
+.pages-footer__social {
+  position: relative;
+}
+/* line 48, ../sass/_footer.scss */
+.pages-footer__social ul {
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+/* line 52, ../sass/_footer.scss */
+.pages-footer__social ul li {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-right: 35px;
+}
+/* line 57, ../sass/_footer.scss */
+.pages-footer__social ul li:hover {
+  opacity: 0.8;
+}
+/* line 60, ../sass/_footer.scss */
+.pages-footer__social ul li a {
+  width: 100%;
+  height: 100%;
+}
+/* line 63, ../sass/_footer.scss */
+.pages-footer__social ul li a img {
+  max-height: 100%;
+}
+/* line 70, ../sass/_footer.scss */
+.pages-footer__social p {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+/* line 79, ../sass/_footer.scss */
+.pages-footer__call-back ul {
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* line 83, ../sass/_footer.scss */
+.pages-footer__call-back ul li {
+  margin-left: 65px;
+}
+
+/* ╨Я╨╛╨┤╨▓╨░╨╗ */
 /* ╨Ь╨╡╨┤╨╕╨░ ╨╖╨░╨┐╤А╨╛╤Б╤Л */
