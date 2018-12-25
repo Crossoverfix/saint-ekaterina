@@ -49,6 +49,7 @@
             font-size: 14px;
             line-height: 19px;
             color: $c-text-d;
+            white-space: nowrap;
           }
         }
       }
@@ -164,6 +165,47 @@
             }
           }
         }
+        &__nav-bar{
+          .group__nav-bar__separate{
+            width: 100px;
+            flex-grow: 1;
+            &:hover{
+              border: none;
+            }
+          }
+          ul{
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            li{
+              margin: 0 5px;
+              padding: 0 5px 10px 5px;
+              position: relative;
+              border-bottom: 2px solid transparent;
+              &.active{
+                border-bottom: 2px solid $c-brown;
+              }
+              &:hover{
+                border-bottom: 2px solid $c-brown;
+                opacity: 0.8;
+              }
+              img{
+                height: 100%;
+              }
+              a{
+                min-width: 20px;
+                min-height: 15px;
+                position: relative;
+                height: 100%;
+                text-transform: uppercase;
+                font-weight: bold;
+                &:hover{
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -189,6 +231,11 @@
       top: 0;
       &.bg-project{
         background: url("../img/ekaterinburg-3423344_CC0 Creative Commons.jpg")no-repeat black center 30%;
+        background-size: cover;
+        opacity: 0.8;
+      }
+      &.bg-media{
+        background: url("../img/ekaterinburg-3423336_CC0 Creative Commons.jpg")no-repeat black center 30%;
         background-size: cover;
         opacity: 0.8;
       }

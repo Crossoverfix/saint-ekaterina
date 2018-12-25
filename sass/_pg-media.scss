@@ -1,0 +1,105 @@
+.video-about{
+  background-color: rgba(154,106,43,0.25);
+  padding: 50px 0;
+  margin-bottom: 75px;
+  &__container{
+    position: relative;
+    width: 100%;
+    &:after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      height: 50px;
+      width: 50px;
+      background: url("../img/svg/you_tube_play.svg")no-repeat center;
+      background-size: contain;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  p{
+    color: $c-text-d;
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+.pages-tab{
+  &__nav{
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    border: none!important;
+    &:before{
+      content: "";
+      position: absolute;
+      width: calc(100% - 30px);
+      left: 15px;
+      bottom: 0;
+      height: 2px;
+      background-color: rgba(0,0,0,0.4);
+    }
+    label{
+      height: 30px;
+      width: 2px;
+      margin: 0 22px;
+      background-color: rgba(0,0,0,0.4);
+    }
+    &__item{
+      padding: 0;
+      cursor: pointer;
+      &__link{
+        display: inline-block;
+        font-size: 30px;
+        color:rgba(0,0,0,0.4);
+        padding: 0 0 20px 0;
+        border: none!important;
+        position: relative;
+        &.active{
+          color: $c-text-d;
+          border: none!important;
+          background-color: transparent!important;
+          &:before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 6px;
+            bottom: 0;
+            left: 0;
+            background-color: $c-brown;
+          }
+        }
+        &:hover{
+          color:rgba(0,0,0,0.8);
+          opacity: 0.8;
+          border: none!important;
+        }
+      }
+    }
+  }
+}
+.video-pg{
+  margin-top: 20px;
+  &__card{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      height: 50px;
+      width: 50px;
+      background: url("../img/svg/you_tube_play.svg")no-repeat center;
+      background-size: contain;
+      z-index: 1;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}

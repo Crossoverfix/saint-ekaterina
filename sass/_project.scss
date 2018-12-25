@@ -15,6 +15,7 @@
         background: url("../img/svg/angle-left.svg")no-repeat center;
         background-size: contain;
         cursor: pointer;
+        flex-shrink: 0;
       }
       &__right{
         display: inline-block;
@@ -24,6 +25,7 @@
         background: url("../img/svg/angle-right.svg")no-repeat center;
         background-size: contain;
         cursor: pointer;
+        flex-shrink: 0;
       }
     }
     ul{
@@ -79,6 +81,21 @@
     height: 480px;
     text-decoration: none;
     margin-bottom: 30px;
+    &.photo-mod{
+      .project-pg__card__img__shadows{
+        display: none;
+      }
+      &:hover{
+        .project-pg__card{
+          &__title{
+            flex-grow: 1;
+          }
+          &__sub-title{
+            flex-grow: 3;
+          }
+        }
+      }
+    }
     &:hover{
       text-decoration: none;
       color: white;
@@ -99,6 +116,12 @@
           top: 0;
           transform: translateY(0);
         }
+        &__time{
+         opacity: 1;
+        }
+        &__number{
+          opacity: 0;
+        }
         &__sub-title{
           top: 0;
         }
@@ -106,6 +129,21 @@
           top: 0;
         }
       }
+    }
+    &__number{
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      background-color: $c-brown;
+      padding: 8px 22px;
+      margin: 0;
+      transform: translateX(-50%);
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+      opacity: 1;
+      transition: all linear 0.1s;
+      white-space: nowrap;
     }
     &__img{
       position: absolute;
@@ -126,7 +164,7 @@
       img{
         position: relative;
         left: 50%;
-        height: 100%;
+        min-height: 100%;
         transform: translateX(-50%);
         transition: all linear 0.3s;
       }
@@ -139,6 +177,16 @@
       margin: 0;
       top: 100%;
       transform: translateY(-100%);
+      transition: all linear 0.3s;
+    }
+    &__time{
+      width: 100%;
+      position: relative;
+      color: white;
+      font-size: 18px;
+      margin: 0;
+      text-align: center;
+      opacity: 0;
       transition: all linear 0.3s;
     }
     &__sub-title{

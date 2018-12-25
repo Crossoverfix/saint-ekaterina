@@ -21,3 +21,33 @@ button, button:active, button:hover, button:visited,button:focus{
     color: white;
   }
 }
+.btn-mail{
+  height: 20px;
+  width: 22px;
+  background: url("../img/svg/envelope.svg")no-repeat center;
+  background-size: contain;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  display: none;
+  z-index: 1;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+.mobil-collapse__btn{
+  display: none;
+  border: none;
+  outline: none;
+  background: url("../img/svg/menu.svg")no-repeat transparent center;
+  background-size: contain;
+  height: 15px;
+  width: 25px;
+  flex-shrink: 0;
+  z-index: 1;
+  &:hover,&:focus{
+    border: none;
+    outline: none;
+  }
+}

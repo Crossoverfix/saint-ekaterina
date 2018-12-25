@@ -1,6 +1,7 @@
 @import "var"; /* Переменные */
 @import "mixin"; /* Миксины */
 @import "btn"; /* Кнопки */
+@import "ico"; /* Иконки */
 body{
   height: 100%;
   margin: 0;
@@ -56,5 +57,6 @@ body{
 } /* Стиль по умолчанию */
 @import "header"; /* Шапка */
 @import "project"; /* Страница Проекты */
+@import "pg-media"; /* Страница Медиа */
 @import "footer"; /* Подвал */
 @import "media"; /* Медиа запросы */
