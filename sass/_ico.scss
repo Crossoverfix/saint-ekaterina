@@ -2,6 +2,9 @@
   &__home{
     background: url("../img/svg/home.svg")no-repeat center;
     background-size: contain;
+    font-size: 0!important;
+    color: transparent!important;
+    vertical-align: middle!important;
   }
   &__facebook{
     background: url("../img/svg/fb.svg")no-repeat center;

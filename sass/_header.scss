@@ -71,9 +71,6 @@
               a{
                 width: 100%;
                 height: 100%;
-                img{
-                  max-height: 100%;
-                }
               }
             }
           }
@@ -90,76 +87,6 @@
 
                 img{
 
-                }
-              }
-            }
-          }
-        }
-        &__nav-first{
-          padding-right: 50px;
-          ul{
-            width: 100%;
-            justify-content: flex-start;
-            align-items: center;
-            li{
-              margin: 0 5px;
-              padding: 0 5px 10px 5px;
-              position: relative;
-              border-bottom: 2px solid transparent;
-              &.active{
-                border-bottom: 2px solid $c-brown;
-              }
-              &:hover{
-                border-bottom: 2px solid $c-brown;
-                opacity: 0.8;
-              }
-              img{
-                height: 100%;
-              }
-              a{
-                min-width: 20px;
-                min-height: 15px;
-                position: relative;
-                height: 100%;
-                text-transform: uppercase;
-                font-weight: bold;
-                &:hover{
-                  text-decoration: none;
-                }
-              }
-            }
-          }
-        }
-        &__nav-second{
-          padding-left: 50px;
-          ul{
-            width: 100%;
-            justify-content: flex-end;
-            align-items: center;
-            li{
-              margin: 0 5px;
-              padding: 0 5px 10px 5px;
-              position: relative;
-              border-bottom: 2px solid transparent;
-              &.active{
-                border-bottom: 2px solid $c-brown;
-              }
-              &:hover{
-                border-bottom: 2px solid $c-brown;
-                opacity: 0.8;
-              }
-              img{
-                height: 100%;
-              }
-              a{
-                min-width: 20px;
-                min-height: 15px;
-                position: relative;
-                height: 100%;
-                text-transform: uppercase;
-                font-weight: bold;
-                &:hover{
-                  text-decoration: none;
                 }
               }
             }
@@ -239,6 +166,11 @@
         background-size: cover;
         opacity: 0.8;
       }
+      &.bg-news{
+        background: url("../img/businessman-1197567_CC0 Creative Commons.jpg")no-repeat black center 30%;
+        background-size: cover;
+        opacity: 0.8;
+      }
     }
   }
   &__breadcrumbs{
@@ -251,11 +183,13 @@
       align-items: center;
     }
     &__crumbs{
+      max-width: 80%;
       ul{
         padding: 0;
         margin: 0;
         list-style-type: none;
-        display: flex;
+        display: inline-flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;

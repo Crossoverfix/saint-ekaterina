@@ -1,0 +1,91 @@
+.photo-more{
+  padding-top: 30px;
+  margin-bottom: 30px;
+  .d-flex{
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+  &__time{
+    position: relative;
+    padding-left: 25px;
+    color: $c-text-d;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 16px;
+      width: 16px;
+      background: url("../img/svg/access_time.svg")no-repeat center;
+      background-size: contain;
+    }
+  }
+  &__title{
+    color: $c-text-d;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__number{
+    white-space: nowrap;
+    display: inline-block;
+    color: white;
+    background-color: $c-brown;
+    padding: 5px 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  &__par{
+    font-size: 18px;
+    line-height: 24px;
+    color: $c-text-d;
+    margin-bottom: 15px;
+    a{
+      text-decoration: underline;
+      color: $c-brown;
+      &:hover{
+        color: $c-brown;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.photo-content{
+  &__card{
+    margin-bottom: 30px;
+    cursor: pointer;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      height: 30px;
+      width: 30px;
+      background: url("../img/svg/zoom.svg")no-repeat center;
+      background-size: contain;
+      opacity: 0;
+      z-index: 1;
+    }
+    &:hover{
+      &:before{
+        opacity: 1;
+      }
+      img{
+        opacity: 0.6;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
