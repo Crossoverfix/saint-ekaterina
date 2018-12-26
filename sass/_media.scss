@@ -122,6 +122,15 @@
   .video-about p{
     padding: 0 10%;
   }
+  .ico__home{
+    font-size: 14px!important;
+    color: $c-text-d!important;
+    background: none;
+  }
+  .header__navigation__group.group__nav-bar ul li{
+    padding: 0 5px;
+    margin:  0 5px 10px 5px;
+  }
 }
 @media screen and (max-width: 767px){
   .header__navigation__group.group__social{
@@ -213,6 +222,10 @@
   }
   .video-about p{
     padding: 0 5%;
+  }
+  ul.collapse.show{
+    display: flex;
+    margin-bottom: 5px;
   }
 }
 @media screen and (max-width: 574px){
@@ -410,4 +423,5 @@
   .video-about p{
     padding: 0 15px;
   }
+
 }

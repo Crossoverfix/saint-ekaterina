@@ -122,6 +122,7 @@
               font-weight: bold;
               font-size: 16px;
               color: $c-brown;
+              word-break: break-word;
               &:hover{
                 color: $c-brown;
                 opacity: 0.8;

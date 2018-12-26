@@ -40,7 +40,11 @@ button, button:active, button:hover, button:visited,button:focus{
   display: none;
   border: none;
   outline: none;
-  background: url("../img/svg/menu.svg")no-repeat transparent center;
+  &.collapsed{
+    background: url("../img/svg/menu.svg")no-repeat transparent center;
+    background-size: contain;
+  }
+  background: url("../img/svg/close.svg")no-repeat transparent center;
   background-size: contain;
   height: 15px;
   width: 25px;
