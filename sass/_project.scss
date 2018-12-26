@@ -174,10 +174,11 @@
       position: relative;
       color: white;
       font-size: 18px;
-      margin: 0;
       top: 100%;
       transform: translateY(-100%);
       transition: all linear 0.3s;
+      margin-bottom: 15px;
+      margin-top: 1px;
     }
     &__time{
       width: 100%;

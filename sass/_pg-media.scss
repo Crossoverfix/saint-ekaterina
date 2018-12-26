@@ -5,6 +5,7 @@
   &__container{
     position: relative;
     width: 100%;
+    padding: 0 15px;
     &:after{
       content: "";
       position: absolute;
@@ -24,6 +25,9 @@
     color: $c-text-d;
     font-size: 26px;
     line-height: 34px;
+    padding: 0 20%;
+    text-align: center;
+    margin-top: 20px;
   }
 }
 .pages-tab{

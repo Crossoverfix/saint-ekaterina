@@ -119,6 +119,9 @@
     min-width: 50%;
     width: 50%;
   }
+  .video-about p{
+    padding: 0 10%;
+  }
 }
 @media screen and (max-width: 767px){
   .header__navigation__group.group__social{
@@ -203,9 +206,13 @@
   }
   .content__footer__pages__par{
     font-size: 20px;
+    line-height: 24px;
   }
   .content__footer__link__par{
     font-size: 20px;
+  }
+  .video-about p{
+    padding: 0 5%;
   }
 }
 @media screen and (max-width: 574px){
@@ -399,5 +406,8 @@
   }
   .content__footer__pages__item{
     margin-bottom: 40px;
+  }
+  .video-about p{
+    padding: 0 15px;
   }
 }
