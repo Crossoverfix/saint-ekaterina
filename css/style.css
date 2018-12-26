@@ -657,10 +657,10 @@ body h6 {
   position: relative;
   color: white;
   font-size: 18px;
-  margin: 0;
   text-align: center;
   opacity: 0;
   transition: all linear 0.3s;
+  margin-bottom: 30px;
 }
 /* line 193, ../sass/_project.scss */
 .project-pg__card__sub-title {
@@ -1040,16 +1040,18 @@ body h6 {
   width: 40%;
   flex-shrink: 0;
   position: relative;
+  max-height: 200px;
+  overflow: hidden;
 }
-/* line 79, ../sass/_pg-news.scss */
+/* line 81, ../sass/_pg-news.scss */
 .news__content__card__img img {
   width: 100%;
 }
-/* line 83, ../sass/_pg-news.scss */
+/* line 85, ../sass/_pg-news.scss */
 .news__content__card__info {
   padding: 5px 0 5px 30px;
 }
-/* line 85, ../sass/_pg-news.scss */
+/* line 87, ../sass/_pg-news.scss */
 .news__content__card__info__time {
   position: relative;
   padding-left: 25px;
@@ -1058,7 +1060,7 @@ body h6 {
   display: inline-block;
   margin-bottom: 15px;
 }
-/* line 92, ../sass/_pg-news.scss */
+/* line 94, ../sass/_pg-news.scss */
 .news__content__card__info__time:before {
   content: "";
   position: absolute;
@@ -1070,14 +1072,16 @@ body h6 {
   background: url("../img/svg/access_time.svg") no-repeat center;
   background-size: contain;
 }
-/* line 104, ../sass/_pg-news.scss */
+/* line 106, ../sass/_pg-news.scss */
 .news__content__card__info__par {
   font-size: 18px;
   color: #3D4045;
   text-align: left;
   margin-bottom: 20px;
+  max-height: 110px;
+  overflow: hidden;
 }
-/* line 110, ../sass/_pg-news.scss */
+/* line 114, ../sass/_pg-news.scss */
 .news__content__card__info__teg {
   list-style-type: none;
   margin: 0;
@@ -1086,12 +1090,12 @@ body h6 {
   flex-direction: row;
   flex-wrap: wrap;
 }
-/* line 117, ../sass/_pg-news.scss */
+/* line 121, ../sass/_pg-news.scss */
 .news__content__card__info__teg li {
   display: inline-block;
   margin-right: 15px;
 }
-/* line 120, ../sass/_pg-news.scss */
+/* line 124, ../sass/_pg-news.scss */
 .news__content__card__info__teg li a {
   text-decoration: none;
   font-weight: bold;
@@ -1099,7 +1103,7 @@ body h6 {
   color: #9A6A2B;
   word-break: break-word;
 }
-/* line 126, ../sass/_pg-news.scss */
+/* line 130, ../sass/_pg-news.scss */
 .news__content__card__info__teg li a:hover {
   color: #9A6A2B;
   opacity: 0.8;

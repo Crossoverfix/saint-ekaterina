@@ -76,6 +76,8 @@
         width: 40%;
         flex-shrink: 0;
         position: relative;
+        max-height: 200px;
+        overflow: hidden;
         img{
           width: 100%;
         }
@@ -106,6 +108,8 @@
           color: $c-text-d;
           text-align: left;
           margin-bottom: 20px;
+          max-height: 110px;
+          overflow: hidden;
         }
         &__teg{
           list-style-type: none;
