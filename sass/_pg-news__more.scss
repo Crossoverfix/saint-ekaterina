@@ -77,6 +77,36 @@
       }
     }
     &__text{
+      &__index{
+        &__title{
+          font-size: 24px;
+          margin-top: 50px;
+          margin-bottom: 40px;
+          color: $c-brown;
+          font-weight: bold;
+          text-align: center;
+        }
+        &__sub-title{
+          font-size: 20px;
+          margin-top: 30px;
+          padding-bottom: 20px;
+          margin-bottom: 10px;
+          color: $c-brown;
+          text-align: center;
+          font-weight: normal!important;
+          position: relative;
+          &:before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            width: 70px;
+            background-color: $c-brown;
+            transform: translateX(-50%);
+          }
+        }
+      }
       h3{
         font-size: 24px;
         line-height: 32px;

@@ -131,6 +131,9 @@
     padding: 0 5px;
     margin:  0 5px 10px 5px;
   }
+  .modal-dialog{
+    max-width: 680px;
+  }
 }
 @media screen and (max-width: 767px){
   .header__navigation__group.group__social{
@@ -226,6 +229,9 @@
   ul.collapse.show{
     display: flex;
     margin-bottom: 5px;
+  }
+  .modal-dialog{
+    max-width: 540px;
   }
 }
 @media screen and (max-width: 574px){
@@ -423,5 +429,26 @@
   .video-about p{
     padding: 0 15px;
   }
-
+  .modal__form{
+    padding: 0;
+  }
+  .modal-header{
+    padding-bottom: 20px;
+  }
+  .modal-title{
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .modal__form__item{
+    margin-bottom: 15px;
+  }
+  .modal__form__item__wrap.file-input .modal__form__item__wrap__label{
+    width: calc(100% + 2px);
+    position: absolute;
+    left: -1px;
+    top: 100%;
+  }
+  .modal__form__item__wrap.file-input{
+    margin-bottom: 50px;
+  }
 }
